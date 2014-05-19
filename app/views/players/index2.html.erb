@@ -1,0 +1,85 @@
+<table>
+<form id="form">
+  	<tr>
+  	<td></td>
+  	<td> Compare two players' Value Over Replacement Players (VORP) over a given time period. </td>
+  	<td></td>
+  	</tr>
+  	
+  	<tr>
+  	<td></td>
+  	<td> 1. Search for a player until player's name shows below search box. </td>
+  	<td></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> Player 1: <br /></div></td>
+  	<td>      </td>
+  	<td><div> Player 2: <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> <input type="text" id="input"> <br /> </div></td>
+  	<td></td>
+  	<td><div> <input type="text" id="input2"> <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div id = "output"> </div></td>
+  	<td></td>
+  	<td><div id = "output2"> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td></td>
+  	<td><br> 2. Enter dates in mm/dd/yyyy format.  Date must have 2 digits!! </br></td>
+  	<td></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> Start Date for Player 1: <br /> </div></td>
+  	<td></td>
+  	<td><div> Start Date for Player 2: <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> <input type="date" id="start_date"/> <br /> </div></td>
+  	<td></td>
+  	<td><div> <input type="date" id="start_date2"/> <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> End Date for Player 1: <br /> </div></td>
+  	<td></td>
+  	<td><div> End Date for Player 2: <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> <input type="date" id="end_date"/> <br /> </div></td>
+  	<td></td>
+  	<td><div> <input type="date" id="end_date2"/> <br /> </div></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><div> <input type="submit" value="Submit"/></div></td>
+  	</tr>
+</form>
+	<tr>
+	<td><div id="message">VORP for Player 1 from mm/dd/yyyy to mm/dd/yyyy. </div></td>
+	<td></td>
+	<td><div id="message2">VORP for Player 2 from mm/dd/yyyy to mm/dd/yyyy. </div></td>
+	</tr>
+</table>
+<br/>
+
+<br>
+For more info on VORP, see <a href=https://en.wikipedia.org/wiki/Value_over_replacement_player>Wikipedia</a>
+</br>
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	new PlayerSearch("input", "output", "start_date", "end_date", "message");
+	//]]> 
+</script>
+

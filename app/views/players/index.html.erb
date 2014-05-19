@@ -1,0 +1,30 @@
+<form id="form">
+<br> <h1>Calculate a player's Value Over Replacement Player (VORP) over a given time period. </h1></br>
+<p><h2> Instructions: </h2>
+<h3 class="instructions"> 1. Search for a player until player's name shows below search box. </h3></br>
+<div> Player: <br /></div>
+<div> <input type="text" id="input"> <br /> </div>
+<div id = "output"> <br /></div>
+<br>
+
+<br><h3 class="instructions"> 2. Enter dates in mm/dd/yyyy format.</h3></br>
+<div> Start Date for Player: <br /> </div>
+<div> <input type="date" id="start_date"/> <br /> </div>
+<div> End Date for Player: <br /> </div>
+<div> <input type="date" id="end_date"/> <br /> </div>
+<div> <input type="submit" value="Submit"/></div>
+
+</form>
+<br>
+<br><h2 class="answer"><div id="message">VORP for Player from mm/dd/yyyy to mm/dd/yyyy. </h2></div>
+
+<br>
+For more info on VORP, see <a href=https://en.wikipedia.org/wiki/Value_over_replacement_player>Wikipedia</a>
+</br>
+
+<script type="text/javascript">
+	//<![CDATA[
+	new PlayerSearch("input", "output", "start_date", "end_date", "message");
+	//]]> 
+</script>
+
